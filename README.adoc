@@ -83,6 +83,19 @@ This repository also houses the link:https://github.com/eclipse/microprofile/blo
 </dependencies>
 ----
 
+=== Cloning the Repository
+To clone the repository using the GitHub CLI, use the following command:
++
+[source,shell]
+----
+gh repo clone eclipse/microprofile
+----
+
+[NOTE]
+====
+Ensure you have the GitHub CLI installed and authenticated before running the above command. You can download and install the GitHub CLI from https://cli.github.com/.
+====
+
 === Code, code, code
 Several Eclipse github repos exist for the development of MicroProfile features...
 
