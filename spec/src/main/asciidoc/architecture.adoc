@@ -44,7 +44,7 @@ If you are still dependent on the Java EE specifications from Java EE 7, please 
 The complete list of MicroProfile 7.1 specifications includes:
 
 * https://github.com/eclipse/microprofile-config/releases/tag/3.1[MicroProfile Config 3.1]
-* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/4.1[MicroProfile Fault Tolerance 4.1]
+* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/4.1.2[MicroProfile Fault Tolerance 4.1]
 * https://github.com/eclipse/microprofile-health/releases/tag/4.0.1[MicroProfile Health 4.0]
 * https://github.com/eclipse/microprofile-telemetry/releases/tag/2.1[MicroProfile Telemetry 2.1]
 * https://github.com/eclipse/microprofile-open-api/releases/tag/4.1[MicroProfile OpenAPI 4.1]
