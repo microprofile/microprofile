@@ -75,7 +75,7 @@ MicroProfile Fault Tolerance provides the ability to separate execution logic fr
 Key aspects of the API include TimeOut, RetryPolicy, Fallback, Bulkhead, and Circuit Breaker processing.
 
 * https://github.com/eclipse/microprofile-fault-tolerance
-* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/4.1
+* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/4.1.2
 
 [[mp-health-check]]
 === MicroProfile Health 4.0
