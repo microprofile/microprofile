@@ -21,14 +21,16 @@
  * SPDX-License-Identifier: Apache-2.0
  **********************************************************************/
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eclipse.microprofile</groupId>
     <artifactId>microprofile</artifactId>
     <packaging>pom</packaging>
-    <version>3.5-SNAPSHOT</version>
+    <version>7.2-SNAPSHOT</version>
 
     <name>MicroProfile</name>
     <description>The MicroProfile Specification and Information Repository</description>
@@ -75,7 +77,8 @@
             <id>ossrh</id>
             <name>Sonatype OSSRH Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <uniqueVersion>true</uniqueVersion>  <!-- for keeping multipe snapshot versions - maybe for staging a final version besides nightly versions -->
+            <uniqueVersion>true</uniqueVersion>  <!-- for keeping multipe snapshot versions - maybe
+            for staging a final version besides nightly versions -->
         </snapshotRepository>
     </distributionManagement>
 
@@ -111,10 +114,10 @@
         <ft-version>4.1</ft-version>
         <health-version>4.0.1</health-version>
         <metrics-version>5.1.0</metrics-version>
-        <jwt-version>2.1</jwt-version>
-        <openapi-version>4.1</openapi-version>
+        <jwt-version>2.2.1</jwt-version>
+        <openapi-version>4.2</openapi-version>
         <rest-client-version>4.0</rest-client-version>
-        <telemetry-version>2.1</telemetry-version>
+        <telemetry-version>2.2</telemetry-version>
 
         <!-- other plugin versions-->
 
@@ -123,9 +126,11 @@
         <version.plugin.release>3.0.1</version.plugin.release>
         <version.plugin.staging>1.7.0</version.plugin.staging>
         <!-- other props  -->
-        <!-- whether autorelease maven central staging repositories - default false to allow review and manually release repositories -->
+        <!-- whether autorelease maven central staging repositories - default false to allow review
+        and manually release repositories -->
         <autorelease>false</autorelease>
-        <!-- keeping closed repos with failure - default is false because the errors are visible in the maven output, but true will leave the repo open for investigation in Sonatype Nexus -->
+        <!-- keeping closed repos with failure - default is false because the errors are visible in
+        the maven output, but true will leave the repo open for investigation in Sonatype Nexus -->
         <keepStagingReposOnFailure>false</keepStagingReposOnFailure>
     </properties>
 
@@ -151,8 +156,16 @@
                             <artifactId>osgi.annotation</artifactId>
                             <version>8.1.0</version>
                         </additionalDependency>
-                        <additionalDependency><groupId>org.osgi</groupId><artifactId>org.osgi.service.cdi</artifactId><version>1.0.1</version></additionalDependency>
-                        <additionalDependency><groupId>biz.aQute.bnd</groupId><artifactId>biz.aQute.bnd.annotation</artifactId><version>6.2.0</version></additionalDependency>
+                        <additionalDependency>
+                            <groupId>org.osgi</groupId>
+                            <artifactId>org.osgi.service.cdi</artifactId>
+                            <version>1.0.1</version>
+                        </additionalDependency>
+                        <additionalDependency>
+                            <groupId>biz.aQute.bnd</groupId>
+                            <artifactId>biz.aQute.bnd.annotation</artifactId>
+                            <version>6.2.0</version>
+                        </additionalDependency>
                     </additionalDependencies>
                     <includeDependencySources>true</includeDependencySources>
                     <dependencySourceIncludes>
@@ -162,7 +175,7 @@
                     <links>
                         <link>https://javaee.github.io/javaee-spec/javadocs/</link>
                     </links>
-               </configuration>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

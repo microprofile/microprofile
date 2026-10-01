@@ -21,13 +21,15 @@
  * SPDX-License-Identifier: Apache-2.0
  **********************************************************************/
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.eclipse.microprofile</groupId>
         <artifactId>microprofile</artifactId>
-        <version>3.5-SNAPSHOT</version>
+        <version>7.2-SNAPSHOT</version>
     </parent>
 
     <groupId>org.eclipse.microprofile</groupId>
@@ -45,7 +47,8 @@
 
         <build.helper.maven.plugin.version>3.6.0</build.helper.maven.plugin.version>
 
-        <!--SBOM generation -->
+        <!--SBOM
+        generation -->
         <version.plugin.cyclonedx>2.8.0</version.plugin.cyclonedx>
 
         <maven.build.timestamp.format>MMMM dd, yyyy</maven.build.timestamp.format>
@@ -64,13 +67,15 @@
                 <artifactId>asciidoctor-maven-plugin</artifactId>
                 <version>${asciidoctor.maven.plugin.version}</version>
                 <dependencies>
-                    <!-- Comment this section to use the default jruby artifact provided by the plugin -->
+                    <!-- Comment this section to use the default jruby artifact provided by the
+                    plugin -->
                     <dependency>
                         <groupId>org.jruby</groupId>
                         <artifactId>jruby</artifactId>
                         <version>${jruby.version}</version>
                     </dependency>
-                    <!-- Comment this section to use the default AsciidoctorJ artifact provided by the plugin -->
+                    <!-- Comment this section to use the default AsciidoctorJ artifact provided by
+                    the plugin -->
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
                         <artifactId>asciidoctorj</artifactId>
@@ -81,7 +86,8 @@
                         <artifactId>asciidoctorj-diagram</artifactId>
                         <version>${asciidoctorj.diagram.version}</version>
                     </dependency>
-                    <!-- Since asciidoctorj-diagram v2.2.0, uncomment to use specific version of plantuml or ditaa -->
+                    <!-- Since asciidoctorj-diagram v2.2.0, uncomment to use specific version of
+                    plantuml or ditaa -->
                     <!--
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
@@ -204,12 +210,12 @@
     <profiles>
         <!--SBOM-->
         <profile>
-        <!-- Generates SBOM. Skip with '-DskipSBOM'.-->
+            <!-- Generates SBOM. Skip with '-DskipSBOM'.-->
             <id>sbom</id>
             <activation>
-              <property>
-                <name>!skipSBOM</name>
-              </property>
+                <property>
+                    <name>!skipSBOM</name>
+                </property>
             </activation>
             <build>
                 <plugins>
