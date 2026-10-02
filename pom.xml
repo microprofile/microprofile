@@ -25,6 +25,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.eclipse.microprofile</groupId>
+        <artifactId>microprofile-parent</artifactId>
+        <version>3.7</version>
+    </parent>
+
     <groupId>org.eclipse.microprofile</groupId>
     <artifactId>microprofile</artifactId>
     <packaging>pom</packaging>
@@ -65,20 +71,6 @@
         <url>https://github.com/eclipse/microprofile/issues</url>
     </issueManagement>
 
-    <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <name>Sonatype OSSRH - Release Staging Area</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <name>Sonatype OSSRH Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <uniqueVersion>true</uniqueVersion>  <!-- for keeping multipe snapshot versions - maybe for staging a final version besides nightly versions -->
-        </snapshotRepository>
-    </distributionManagement>
-
     <mailingLists>
         <mailingList>
             <name>MicroProfile</name>
@@ -118,15 +110,8 @@
 
         <!-- other plugin versions-->
 
+        <staging.prefix>microprofile</staging.prefix>
         <version.plugin.javadoc>3.7.0</version.plugin.javadoc>
-        <version.plugin.gpg>3.2.4</version.plugin.gpg>
-        <version.plugin.release>3.0.1</version.plugin.release>
-        <version.plugin.staging>1.7.0</version.plugin.staging>
-        <!-- other props  -->
-        <!-- whether autorelease maven central staging repositories - default false to allow review and manually release repositories -->
-        <autorelease>false</autorelease>
-        <!-- keeping closed repos with failure - default is false because the errors are visible in the maven output, but true will leave the repo open for investigation in Sonatype Nexus -->
-        <keepStagingReposOnFailure>false</keepStagingReposOnFailure>
     </properties>
 
     <build>
@@ -163,17 +148,6 @@
                         <link>https://javaee.github.io/javaee-spec/javadocs/</link>
                     </links>
                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>${version.plugin.release}</version>
-                <configuration>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <localCheckout>true</localCheckout>
-                    <useReleaseProfile>false</useReleaseProfile>
-                    <arguments>${arguments} -Prelease -Drevremark=${revremark}</arguments>
-                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -268,47 +242,5 @@
             <type>pom</type>
         </dependency>
     </dependencies>
-
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>${version.plugin.staging}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <serverId>ossrh</serverId>
-                            <autoReleaseAfterClose>${autorelease}</autoReleaseAfterClose>
-                            <keepStagingRepositoryOnCloseRuleFailure>${keepStagingReposOnFailure}</keepStagingRepositoryOnCloseRuleFailure>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${version.plugin.gpg}</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <configuration>
-                                    <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
-                                        <arg>loopback</arg>
-                                    </gpgArguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
 </project>
