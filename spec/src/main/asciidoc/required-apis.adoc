@@ -87,12 +87,12 @@ to the underlying platform (ex: Kubernetes)
 * https://github.com/eclipse/microprofile-health/releases/tag/4.0.1
 
 [[mp-jwt-auth]]
-=== MicroProfile JWT Authentication 2.1
+=== MicroProfile JWT Authentication 2.2
 
 MicroProfile JWT Authentication provides role based access control (RBAC) microservice endpoints using OpenID Connect (OIDC) and JSON Web Tokens (JWT).
 
 * https://github.com/eclipse/microprofile-jwt-auth
-* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/2.1
+* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/2.2-RC4
 
 [[mp-open-api]]
 === MicroProfile OpenAPI 4.1
@@ -100,7 +100,7 @@ MicroProfile JWT Authentication provides role based access control (RBAC) micros
 MicroProfile OpenAPI provides a unified Java API for the https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md[OpenAPI v3.1 specification] that all application developers can use to expose their API documentation.
 
 * https://github.com/eclipse/microprofile-open-api
-* https://github.com/eclipse/microprofile-open-api/releases/tag/4.1
+* https://github.com/eclipse/microprofile-open-api/releases/tag/4.2-RC5
 
 [[mp-telemetry]]
 === MicroProfile Telemetry 2.1
@@ -114,7 +114,7 @@ With a lack of standardization, the net result is the lack of data portability a
 The https://opentelemetry.io[OpenTelemetry] project solves these problems by providing a single, vendor-agnostic solution.
 
 * https://github.com/eclipse/microprofile-telemetry
-* https://github.com/eclipse/microprofile-telemetry/releases/tag/2.1
+* https://github.com/eclipse/microprofile-telemetry/releases/tag/2.2-RC3
 
 [[mp-rest-client]]
 === MicroProfile Rest Client 4.0
