@@ -103,10 +103,10 @@
         <ft-version>4.1</ft-version>
         <health-version>4.0.1</health-version>
         <metrics-version>5.1.0</metrics-version>
-        <jwt-version>2.1</jwt-version>
-        <openapi-version>4.1</openapi-version>
+        <jwt-version>2.2-RC4</jwt-version>
+        <openapi-version>4.2-RC5</openapi-version>
         <rest-client-version>4.0</rest-client-version>
-        <telemetry-version>2.1</telemetry-version>
+        <telemetry-version>2.2-RC3</telemetry-version>
 
         <!-- other plugin versions-->
 
