@@ -32,17 +32,17 @@
 ifdef::backend-pdf[]
 :pagenums:
 :numbered:
-:title-logo-image: image::MP-logo-w-tagline.png[pdfwidth=4.25in,align=right]
+:title-logo-image: image::image/MP-logo-w-tagline.png[pdfwidth=4.25in,align=right]
 endif::[]
 
 // == License
 :sectnums!:
-include::license-efsl.adoc[]
+include::license-efsl.asciidoc[]
 
 // == MicroProfile
 
-include::architecture.adoc[]
+include::architecture.asciidoc[]
 
-include::required-apis.adoc[]
+include::required-apis.asciidoc[]
 
-include::notices.adoc[]
+include::notices.asciidoc[]
