@@ -141,6 +141,16 @@
                         <link>https://javaee.github.io/javaee-spec/javadocs/</link>
                     </links>
                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate-javadoc-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>aggregate-jar</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
