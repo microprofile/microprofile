@@ -29,32 +29,9 @@
         <artifactId>microprofile</artifactId>
         <version>7.2-SNAPSHOT</version>
     </parent>
-
+    
     <groupId>org.eclipse.microprofile</groupId>
     <artifactId>microprofile-spec</artifactId>
     <packaging>pom</packaging>
     <name>MicroProfile Specification</name>
-
-    <properties>
-        <asciidoctor.maven.plugin.version>2.2.6</asciidoctor.maven.plugin.version>
-        <!-- Required dependency overwrite versions for the Asciidoctor Maven Plugin version -->
-        <asciidoctorj.version>2.5.13</asciidoctorj.version>
-        <asciidoctorj.diagram.version>2.3.1</asciidoctorj.diagram.version>
-        <asciidoctorj.pdf.version>2.3.19</asciidoctorj.pdf.version>
-        <jruby.version>9.4.12.1</jruby.version>
-
-        <build.helper.maven.plugin.version>3.6.0</build.helper.maven.plugin.version>
-
-        <!--SBOM generation -->
-        <version.plugin.cyclonedx>2.8.0</version.plugin.cyclonedx>
-
-        <maven.build.timestamp.format>MMMM dd, yyyy</maven.build.timestamp.format>
-        <revisiondate>${maven.build.timestamp}</revisiondate>
-        <revremark>Draft</revremark>
-        <inceptionYear>2016</inceptionYear>
-        <spec.pdf>${project.build.directory}/generated-docs/${project.build.finalName}.pdf</spec.pdf>
-        <spec.html>${project.build.directory}/generated-docs/${project.build.finalName}.html</spec.html>
-    </properties>
-
-   
 </project>
