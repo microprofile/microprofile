@@ -48,6 +48,4 @@ https://github.com/eclipse/microprofile/blob/master/CONTRIBUTING_es.adoc[English
 
 ** Q4-2019 https://microprofile.io/2019/10/24/tutorials-on-each-eclipse-microprofile-specification/[blog] & https://www.youtube.com/watch?v=0h3QceSBBiY&list=PLFjB4VDnlT_3vXkrLkSBW7j6ygQRXBypA[video] tutoriales que te facilitaran, como recién llegado, navegar las 12 APIs de MicroProfile.
 
-* También revisa la guía para contribuir https://wiki.eclipse.org/MicroProfile/ContributingGuidelines[MicroProfile Contributing Guidelines] en la wiki https://wiki.eclipse.org/MicroProfile[MicroProfile wiki page]
-
-* https://www.eclipse.org/projects/tools/default_contributing_file.php?id=technology.microprofile[Auto-generated Contribution Link]
+* Para consultar información actual del proyecto y recursos para colaboradores, visita la https://projects.eclipse.org/projects/technology.microprofile/developer[página para desarrolladores del proyecto Eclipse MicroProfile].
