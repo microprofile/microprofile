@@ -46,9 +46,9 @@ The complete list of MicroProfile 7.2 specifications includes:
 * https://github.com/eclipse/microprofile-config/releases/tag/3.1[MicroProfile Config 3.1]
 * https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/4.1.2[MicroProfile Fault Tolerance 4.1]
 * https://github.com/eclipse/microprofile-health/releases/tag/4.0.1[MicroProfile Health 4.0]
-* https://github.com/eclipse/microprofile-telemetry/releases/tag/2.2-RC3[MicroProfile Telemetry 2.2]
-* https://github.com/eclipse/microprofile-open-api/releases/tag/4.2-RC5[MicroProfile OpenAPI 4.2]
-* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/2.2-RC4[MicroProfile JWT Authentication 2.2]
+* https://github.com/eclipse/microprofile-telemetry/releases/tag/2.2[MicroProfile Telemetry 2.2]
+* https://github.com/eclipse/microprofile-open-api/releases/tag/4.2[MicroProfile OpenAPI 4.2]
+* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/2.2.1[MicroProfile JWT Authentication 2.2]
 * https://github.com/eclipse/microprofile-rest-client/releases/tag/4.0[MicroProfile Rest Client 4.0]
 
 The Maven coordinates for this Eclipse release are as follows:
@@ -57,7 +57,7 @@ The Maven coordinates for this Eclipse release are as follows:
 <dependency>
     <groupId>org.eclipse.microprofile</groupId>
     <artifactId>microprofile</artifactId>
-    <version>7.2-RC1</version>
+    <version>7.2</version>
     <type>pom</type>
     <scope>provided</scope>
 </dependency>
